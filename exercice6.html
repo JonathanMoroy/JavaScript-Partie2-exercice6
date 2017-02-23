@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 6</title>
+  </head>
+  <body>
+    <div class="conteneur">
+      <!-- Ajout de deux event à chaque img, on leur ajoute un this pour spécifié que c'est cette element ! -->
+      <img src="images/image1.jpg" id="image1" onmouseover="altern(this, 'images/image1_2.jpg')" onmouseout="altern(this, 'images/image1.jpg')" />
+      <img src="images/image2.jpg" id="image2" onmouseover="altern(this, 'images/image2_2.jpg')" onmouseout="altern(this, 'images/image2.jpg')" />
+      <img src="images/image3.jpg" id="image3" onmouseover="altern(this, 'images/image3_2.jpg')" onmouseout="altern(this, 'images/image3.jpg')" />
+      <img src="images/image4.jpg" id="image4" onmouseover="altern(this, 'images/image4_2.jpg')" onmouseout="altern(this, 'images/image4.jpg')" />
+      <img src="images/image5.jpg" id="image5" onmouseover="altern(this, 'images/image5_2.jpg')" onmouseout="altern(this, 'images/image5.jpg')" />
+    </div>
+    <script>
+    // ajout d'une fonction qui change la source d'une image - valable pour mouseout aussi
+    function altern(arg, new_src) {
+     arg.setAttribute('src', new_src)
+    }
+    </script>
+  </body>
+</html>
